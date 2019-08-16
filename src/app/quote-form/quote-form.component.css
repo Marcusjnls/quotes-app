@@ -1,0 +1,19 @@
+.textarea{
+    text-decoration-color: black;
+  }
+  .font{
+    font-size: 25px;
+  }
+.container{
+    font-size: 25px;
+    text-align: center;
+    text-decoration-color:white;
+  }
+.row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 500px;
+  }
+.form{
+  text-decoration-color: white;
+}
