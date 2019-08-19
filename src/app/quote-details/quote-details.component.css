@@ -2,8 +2,10 @@
     font-size: 25px;
     float: left;
     text-align: left;
+    font-family: 'Oswald', sans-serif;
   }
 
 .by{
-  text-decoration-color: white;
+  text-decoration-color: black;
+  font-family: 'Oswald', sans-serif;
 }

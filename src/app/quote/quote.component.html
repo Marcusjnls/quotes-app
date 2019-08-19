@@ -8,13 +8,13 @@
         
           <br>
           <li id="h3">{{quote.name}} <li id = "poster">Posted on: {{quote.quoteDate|date}}</li><br>
-            <button class = "bt n btn-success" (click)='toogleDetails(i)'>Toogle Details</button>
+            <button class = "wrapper btn btn-success" (click)='toogleDetails(i)'>Toogle Details</button>
           
         
-          <button (click)='upvote(i)' class=""><i class="btn btn-warning" ></i>  {{quote.upvotes}}</button>
+          <button (click)='upvote(i)' class=""><i class="wrapper btn btn-primary" ></i> Upvote {{quote.upvotes}}</button>
           
         
-          <button (click)='downvote(i)' class=""><i class="btn btn-warning"></i>  {{quote.downvotes}} </button>
+          <button (click)='downvote(i)' class=""><i class="wrapper btn btn-primary"></i> Downvote  {{quote.downvotes}} </button>
           <br>
         
             <app-quote-details *ngIf="quote.showAuthor" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>

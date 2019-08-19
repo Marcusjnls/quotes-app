@@ -1,33 +1,37 @@
-<div class="container">
+<div class="container card">
+    <h2 class="text-center py4">ADD QUOTE FORM</h2> 
     <div class="form">
         <form (ngSubmit)="submitQuote()" #quoteForm='ngForm'>
-            <div class="row">
+            <div class="row md-form">
                 <div class="form-group">
+                    <i class="fa fa-envelope prefix grey-text"></i>
                     <label for="quote" id="quote">Enter your Quote:</label>
                     <textarea class="form-control textarea font" id="name" rows="3" [(ngModel)]="newQuote.name"
                         name="name"></textarea>
                 </div>
             </div>
-            <div class="row">
+            <div class="row md-form">
 
 
                 <div class="form-group">
+                    <i class="fa fa-user prefix grey-text"></i>
                     <label for="author" id="author">Author:</label>
                     <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="name">
                 </div>
             </div>
-            <div class="row">
+            <div class="row md-form">
 
 
                 <div class="form-group">
-                    <label for="submitby" id="submitby" class="submitby">Submit By:</label>
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <label for="submitby" id="submitby" class="submitby">Submitted By:</label>
                     <input type="text" class="form-control" id="submitby" [(ngModel)]="newQuote.submit" name="name">
                 </div>
             </div>
-            <div class="row">
+            <div class="row md-form">
 
 
-                <button type="submit" class="btn btn-success" id="submitbtn">Submit Quote </button>
+                <button type="submit" class="btn btn-success" id="submitbtn">Post Quote</button>
             </div>
         </form>
 

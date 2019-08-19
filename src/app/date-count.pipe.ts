@@ -13,7 +13,8 @@ import { Pipe, PipeTransform } from '@angular/core';
     var dateCounter = dateDifferenceSeconds/secondsInDay;
     if (dateCounter < 1){
       return 0;
-    }else{
+    }
+    else {
       return dateCounter;
     }
   }
